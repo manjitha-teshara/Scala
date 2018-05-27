@@ -1,0 +1,16 @@
+def re():Unit={
+println("Enter Word or give q to exit the system")
+println(":-")
+var x1=scala.io.StdIn.readLine()
+if(x1=="q" ||x1=="Q") print("Stop")
+else{var ar=new Array[Char](x.length)
+
+for(i<- 0 to x.length-1)
+
+ar(x.length-i-1)=x(i)
+var l=ar.toList
+
+if(l==x) println(x1+" is palindrome")
+else println(x1+" is not a palindrome") 
+re()
+}}
