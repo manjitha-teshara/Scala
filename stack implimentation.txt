@@ -1,0 +1,43 @@
+object Stack{
+var stack=scala.collection.mutable.ArrayBuffer[Int]()
+
+def isEmpty():Boolean={
+if(stack.length==0) true
+else false
+}
+
+def push(input:Int):Unit={
+stack+=input
+}
+
+def size():Int={
+stack.length
+}
+
+def pop():Int={
+stack.remove(stack.length-1)
+}
+
+def peek()={
+stack(stack.length-1)
+}
+
+}
+
+
+
+
+object Demo extends App{
+var st=Stack
+println(st.isEmpty())
+println(st.size())
+st.push(21)
+st.push(3)
+println(st.peek())
+println(st.isEmpty())
+println(st.pop())
+println(st.isEmpty())
+println(st.size())
+}
+
+
