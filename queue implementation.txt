@@ -1,0 +1,41 @@
+object Queue{
+
+	var queue=scala.collection.mutable.ArrayBuffer[Int]()
+
+	def isEmpty():Boolean={
+		if(queue.length==0) true
+		else false
+	}
+
+	def enenque(item:Int):Unit={
+		queue+=item
+		println("Entered sucess")
+	}
+
+	def size():Unit={
+
+		println(queue.length)
+	}
+
+	def dequeue():Unit={
+		queue.remove(0)
+	}
+
+	def peek():Unit={
+		println(queue(queue.length-1))
+	}
+}
+
+object Demo extends App{
+var q=Queue
+q.isEmpty()
+q.enenque(12)
+q.enenque(123)
+q.dequeue()
+q.enenque(1234)
+q.enenque(12345)
+q.dequeue()
+q.peek()
+q.enenque(123456)
+q.size()
+}
