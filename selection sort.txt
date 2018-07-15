@@ -1,0 +1,20 @@
+
+def sl(a:Array[Int]):Array[Int]={
+for(i <- 0 to a.length-1){
+	var minIndex=i
+	for(j<- i+1 to a.length){
+		if(a(j)<a(minIndex)){
+		
+	minIndex=j
+	}
+	if(minIndex !=i){
+	var t=a(i)
+	a(i)=a(minIndex)
+	a(minIndex)=t
+	}
+	
+	}
+	a
+	}
+
+}
