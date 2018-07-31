@@ -1,0 +1,7 @@
+def fac(num:Int):Int={
+
+	if(num==0){1}
+	else{
+		num*fac(num-1)
+	}
+}
