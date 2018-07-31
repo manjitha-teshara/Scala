@@ -1,0 +1,6 @@
+def gcd(a:Int,b:Int):Int={
+
+	if(b==0) a
+	else if(a>=b){gcd(b,a%b)}
+	else{gcd(b,a)}
+}
